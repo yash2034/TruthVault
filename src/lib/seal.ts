@@ -15,22 +15,9 @@ const seal = new SealClient({
   verifyKeyServers: false,
 });
 
-// export async function encryptCSV(csv: string, address: string) {
-//   const data = new TextEncoder().encode(csv);
-//   const pkg = process.env.NEXT_PUBLIC_PACKAGE_ID!;  // String
-
-//   const { encryptedObject } = await seal.encrypt({
-//     threshold: 2,
-//     packageId: pkg,
-//     id: address,  // Fixed: string for address
-//     data,
-//   });
-
-//   return { encryptedObject, policyId: address };
-// }
 
 export async function encryptCSV(csv: string, address: string) {
-  console.log("encryptCSV() called");
+//   console.log("encryptCSV() called");
 
   const data = new TextEncoder().encode(csv);
   const pkg = process.env.NEXT_PUBLIC_PACKAGE_ID!;
@@ -41,7 +28,7 @@ export async function encryptCSV(csv: string, address: string) {
   // Seal EXPECTS a string beginning with "0x"
   const policyId = "0x" + truncatedHex;
 
-  console.log("Using policyId:", policyId, "length:", policyId.length);
+//   console.log("Using policyId:", policyId, "length:", policyId.length);
 
   const { encryptedObject } = await seal.encrypt({
     threshold: 1,      // important!

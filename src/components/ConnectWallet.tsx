@@ -1,17 +1,3 @@
-// 'use client';
-// import { ConnectButton } from '@mysten/dapp-kit';
-
-// export default function ConnectWallet() {
-//   return (
-//     <div className="flex justify-center mb-6">
-//       <ConnectButton 
-//         connectText="Connect Slush Wallet"
-//         className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold"
-//       />
-//     </div>
-//   );
-// }
-
 'use client';
 import { ConnectButton, useCurrentAccount, useCurrentWallet } from '@mysten/dapp-kit';
 
