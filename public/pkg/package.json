@@ -1,0 +1,20 @@
+{
+  "name": "nautilus-wasm",
+  "type": "module",
+  "collaborators": [
+    "yash-0025 <yashpatel200403@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "nautilus_wasm_bg.wasm",
+    "nautilus_wasm.js",
+    "nautilus_wasm_bg.js",
+    "nautilus_wasm.d.ts"
+  ],
+  "main": "nautilus_wasm.js",
+  "types": "nautilus_wasm.d.ts",
+  "sideEffects": [
+    "./nautilus_wasm.js",
+    "./snippets/*"
+  ]
+}
