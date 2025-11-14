@@ -48,7 +48,7 @@ export default function Homepage() {
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-indigo-50 text-indigo-600 px-4 py-2 rounded-full text-sm font-medium">
               <Cpu className="w-4 h-4" />
-              <span>Powered by Sui, Seal, Walrus & Nautilus AI</span>
+              <span>Powered by Sui, Seal, Walrus & AI</span>
             </div>
 
             {/* Headline */}
@@ -215,7 +215,7 @@ export default function Homepage() {
               { name: "Sui Blockchain", desc: "Fast, secure transactions", color: "from-blue-500 to-cyan-500" },
               { name: "Mysten Seal", desc: "End-to-end encryption", color: "from-purple-500 to-pink-500" },
               { name: "Walrus Storage", desc: "Decentralized data", color: "from-orange-500 to-red-500" },
-              { name: "Nautilus AI", desc: "Zero-knowledge proofs", color: "from-green-500 to-emerald-500" }
+              { name: "Nautilus AI", desc: "Currently we have scratch AI model called Nautilus [ Will be adding ZK proofs in future]", color: "from-green-500 to-emerald-500" }
             ].map((tech, idx) => (
               <div key={idx} className="text-center">
                 <div className={`bg-gradient-to-br ${tech.color} w-20 h-20 rounded-2xl mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold shadow-lg`}>
@@ -255,7 +255,7 @@ export default function Homepage() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Shield className="w-6 h-6 text-indigo-400" />
@@ -267,24 +267,14 @@ export default function Homepage() {
               <h4 className="font-bold text-white mb-4">Product</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="/app" className="hover:text-white">App</a></li>
-                <li><a href="/how-it-works" className="hover:text-white">How It Works</a></li>
-                <li><a href="/use-cases" className="hover:text-white">Use Cases</a></li>
+                <li><a href="/about" className="hover:text-white">About</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-white mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="/about" className="hover:text-white">About</a></li>
-                <li><a href="#" className="hover:text-white">Blog</a></li>
-                <li><a href="#" className="hover:text-white">Careers</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white">Privacy</a></li>
-                <li><a href="#" className="hover:text-white">Terms</a></li>
-                <li><a href="#" className="hover:text-white">Security</a></li>
+                <li><a href="/how-it-works" className="hover:text-white">How It Works</a></li>
+                <li><a href="/use-cases" className="hover:text-white">Use Cases</a></li>
               </ul>
             </div>
           </div>

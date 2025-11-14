@@ -59,7 +59,7 @@ export default function About() {
     },
     {
       name: "Nautilus AI",
-      description: "Zero-knowledge proofs for privacy-preserving computation",
+      description: "Zero-knowledge proofs for privacy-preserving computation [ Will be adding in future]",
       stat: "100% private",
       color: "from-green-500 to-emerald-500"
     }
@@ -158,7 +158,7 @@ export default function About() {
                   "Instant verification in under 5 seconds",
                   "Free to use, $0.01 blockchain fee",
                   "One upload works for all applications",
-                  "Zero-knowledge proofs protect privacy",
+                  "Zero-knowledge proofs protect privacy [Will be added in the future]",
                   "Blockchain-secured, forgery impossible",
                   "QR codes accepted universally"
                 ].map((item, idx) => (

@@ -1,10 +1,14 @@
 # TruthVault 🏥⛓️
 
+**NOTE** : The term Nautilus mentioned in this project is just a name for the AI model which we build in-house . The reason behind this is adding the Nautilus ZK proofs in the future so that's why we decided to name it as Nautilus AI . Currently we are not using any Nautilus Zk proofs.
+
 > **Store Once. Prove Forever. AI You Can Trust.**
 
 - TruthVault is a decentralized health verification platform that transforms medical reports into blockchain-verified, privacy-preserving proofs.
-- We are the one stop solution for your health reports where you can just upload your report it will be encrypted and secured get your NFT , get the QR code to share and download the certificate 
+- We are the one stop solution for your health reports where you can just upload your report it will be encrypted and secured get your NFT , get the QR code to share and download the certificate.
 - It combines cutting-edge Web3 technologies to solve real-world problems in health verification.
+
+
 
 [![Sui Blockchain](https://img.shields.io/badge/Sui-Blockchain-blue)](https://sui.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -16,7 +20,6 @@ TruthVault provides:
 - ⚡ **Instant Verification** - Generate proofs in under 5 seconds
 - 💰 **Cost-Effective** - $0.01 blockchain fee vs $500 traditional cost
 - 🔄 **Reusable Proofs** - One upload, infinite verifications
-- 🔒 **Privacy-Preserving** - Zero-knowledge proofs protect sensitive data
 - 🛡️ **Tamper-Proof** - Blockchain-secured, forgery impossible
 - 🌍 **Universal Acceptance** - QR codes work everywhere
 
@@ -43,9 +46,9 @@ TruthVault provides:
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
-│                   NAUTILUS AI LAYER                         │
+│                    AI LAYER                                 │
 │  ┌────────────────────────────────────────────────────┐     │
-│  │  Zero-Knowledge Computation via WASM               │     │
+│  │ Computation via WASM ZK PROOFS WILL BE ADDED LATER │     │
 │  │  • Parse Health Metrics                            │     │
 │  │  • Calculate Risk Score                            │     │
 │  │  • Generate Cryptographic Proof                    │     │
@@ -95,7 +98,7 @@ TruthVault provides:
 - **Client-side encryption** - Data never leaves device unencrypted
 
 ### **AI & Computation**
-- **Nautilus AI** - Zero-knowledge proof framework
+- **Nautilus AI** - Zero-knowledge proof framework [ Will be Added in future ]
 - **Rust + WASM** - High-performance computation
 - **wasm-bindgen** - JavaScript interop
 
@@ -171,7 +174,7 @@ export async function POST(req: Request) {
 }
 ```
 
-### **4. AI Risk Assessment (Nautilus)**
+### **4. AI Risk Assessment (Nautilus- zk proofs Will be added in future)**
 
 ```rust
 // nautilus-wasm/src/lib.rs
@@ -261,7 +264,7 @@ module truth_nft::truth_nft {
    - No single point of failure
    - Requires majority consensus to decrypt
 
-3. **Zero-Knowledge Proofs**
+3. **Zero-Knowledge Proofs** [As of now only AI is being used, ZK proofs will be implemented in later phase]
    - AI computes on encrypted data
    - Never accesses raw health information
    - Cryptographic proof of correct computation
@@ -427,7 +430,7 @@ truthvault/
 ✅ **QR Code** - Scannable proof for instant verification
 ✅ **Downloadable** - Save QR code image and text certificate
 ✅ **Reusable** - One proof works for multiple applications
-✅ **Private** - Zero-knowledge proofs protect sensitive data
+✅ **Private** - Zero-knowledge proofs protect sensitive data [Will be adding in future]
 
 ### **For Verifiers**
 
@@ -533,7 +536,7 @@ User Data → Client Encryption → Walrus Upload → Blockchain Reference
 
 ### **Test Files Generator**
 
-Use the built-in test files from the [**Test-Report-Files**]() folder.
+Use the built-in test files from the [**Test-Report-Files**](https://github.com/yash-0025/TruthVault/tree/master/Test-Report-Files) folder.
 
 ```javascript
 
@@ -649,18 +652,13 @@ We welcome contributions! Please follow these steps:
 - [ ] Developer SDK
 - [ ] Global partnerships
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 👥 Team
 
 - **Developer**: Yash Patel
-- **Technologies**: Sui, Seal, Walrus, Nautilus AI
+- **Technologies**: Sui, Seal, Walrus,
 - **Website**: https://truth-vault.patelyash.in
 
 ---
@@ -668,7 +666,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **Mysten Labs** - For Sui blockchain, Seal encryption, and Walrus storage
-- **Nautilus** - For zero-knowledge proof framework
+- **Nautilus AI** - For zero-knowledge proof framework [ ZK proofs Will be adding in future Current implementation has only scratch AI]
 - **Sui Community** - For documentation and support
 - **Hackathon Organizers** - For this amazing opportunity
 

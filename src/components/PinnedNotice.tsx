@@ -56,7 +56,7 @@ export default function PinnedNotice() {
                 <p className="text-sm font-semibold text-yellow-900 truncate">
                   ⚠️ Beta - Testnet Only | Basic AI Model | 
                   <a
-                    href="https://github.com/yourusername/truthvault/tree/main/test-files"
+                    href="https://github.com/yash-0025/TruthVault/tree/master/Test-Report-Files"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ml-1 underline hover:text-yellow-800 inline-flex items-center gap-1"
@@ -77,13 +77,13 @@ export default function PinnedNotice() {
               >
                 {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
               </button>
-              <button
+              {/* <button
                 onClick={handleDismiss}
                 className="text-yellow-900 hover:text-yellow-800 p-1 rounded hover:bg-yellow-300/50 transition-colors"
                 title="Dismiss"
               >
                 <X className="w-4 h-4" />
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -101,7 +101,13 @@ export default function PinnedNotice() {
                 <div className="flex items-start gap-2">
                   <span className="text-yellow-700 font-bold mt-0.5 text-xs">→</span>
                   <p>
-                    <strong>Basic AI:</strong> Early-stage health risk model. Enhanced models coming in future releases.
+                    <strong>Nautilus AI:</strong> Nautilus AI term is being used as a placeholder for the AI model as of now as we have future plans of integrating Nautilus with this AI which will use Zk proofs. Currently we are not using any Nautilus Zk proofs.
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-yellow-700 font-bold mt-0.5 text-xs">→</span>
+                  <p>
+                    <strong>Nautilus AI:</strong> Early-stage health risk model. It will be a combination of AI and Nautilus ZK proof but ZK proofs will be added in future updates.
                   </p>
                 </div>
 
@@ -112,7 +118,7 @@ export default function PinnedNotice() {
                       <strong>Testing:</strong> Download mock health reports for testing:
                     </span>
                     <a
-                      href="https://github.com/yourusername/truthvault/tree/main/test-files"
+                      href="https://github.com/yash-0025/TruthVault/tree/master/Test-Report-Files"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 bg-yellow-700 hover:bg-yellow-800 text-white px-2.5 py-1 rounded text-xs font-medium transition-colors"
@@ -123,19 +129,6 @@ export default function PinnedNotice() {
                   </div>
                 </div>
 
-                <div className="pt-2 mt-2 border-t border-yellow-500/30">
-                  <p className="text-xs text-yellow-800">
-                    💡 Built for Sui Overflow Hackathon 2024 | 
-                    <a
-                      href="https://github.com/yourusername/truthvault/issues"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="ml-1 underline hover:text-yellow-900"
-                    >
-                      Report Issues
-                    </a>
-                  </p>
-                </div>
               </div>
             </div>
           )}

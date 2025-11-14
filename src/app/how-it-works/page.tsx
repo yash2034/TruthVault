@@ -38,7 +38,7 @@ export default function HowItWorks() {
       number: "05",
       icon: <Cpu className="w-12 h-12" />,
       title: "AI Risk Analysis",
-      description: "Nautilus AI analyzes your health metrics using zero-knowledge proofs. Your data stays private.",
+      description: "Nautilus AI analyzes your health metrics using zero-knowledge proofs. Your data stays private. [ZK proofs will be added in future]",
       tech: "Nautilus ZK-Proof AI",
       color: "from-indigo-500 to-purple-500"
     },
@@ -93,7 +93,7 @@ export default function HowItWorks() {
     {
       name: "Nautilus AI",
       role: "Computation Layer",
-      description: "Zero-knowledge proof AI that analyzes your health metrics without ever accessing your raw data. Privacy-preserving machine learning.",
+      description: "Zero-knowledge proof AI that analyzes your health metrics without ever accessing your raw data. Privacy-preserving machine learning [ZK proofs will be added in future].",
       features: ["Zero-knowledge proofs", "Private computation", "AI risk assessment", "WASM-powered"],
       icon: "🤖"
     }
@@ -219,7 +219,7 @@ export default function HowItWorks() {
                 { title: "Your Device", desc: "Health report uploaded", color: "bg-blue-500" },
                 { title: "Client-Side Encryption", desc: "Data encrypted with your wallet key", color: "bg-purple-500" },
                 { title: "Walrus Storage", desc: "Encrypted blob stored on decentralized network", color: "bg-orange-500" },
-                { title: "Nautilus AI", desc: "Zero-knowledge computation on encrypted data", color: "bg-green-500" },
+                { title: "Nautilus AI", desc: "Zero-knowledge computation on encrypted data [ZK proofs will be added in future]", color: "bg-green-500" },
                 { title: "Sui Blockchain", desc: "Proof minted as NFT with immutable record", color: "bg-indigo-500" },
                 { title: "QR Code", desc: "Shareable verification delivered to you", color: "bg-pink-500" }
               ].map((step, idx) => (
@@ -258,7 +258,7 @@ export default function HowItWorks() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { title: "End-to-End Encryption", desc: "Data encrypted on your device before upload" },
-              { title: "Zero-Knowledge Proofs", desc: "AI analyzes without seeing your raw data" },
+              { title: "Zero-Knowledge Proofs", desc: "ZK Proofs will be added in future. Currently only AI implemented" },
               { title: "Decentralized Storage", desc: "No single point of failure or control" },
               { title: "Your Keys, Your Data", desc: "Only you can decrypt your health records" },
               { title: "Immutable Proofs", desc: "Blockchain records cannot be altered" },
